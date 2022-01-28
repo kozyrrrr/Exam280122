@@ -6,7 +6,8 @@ body{
 }
 .body{
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
 }
 header{
     height: 100px;
@@ -26,16 +27,31 @@ li{
 }
 .header{
     margin: 20px 120px;
+    max-width: 1200px;
+    width: 100%;
 }
 .logo{
     height: 51px;
     width: 40px;
 }
 ul li{
-    margin: auto 30px;
+    margin: auto 0;
+}
+.links{
+    max-width: 500px;
+    width: 100%;
+}
+.links ul{
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .h-60px{
     height: 60px;
+}
+.main-text{
+    font-size: 60px;
 }
 .text-green{
     color: #35B8BE;
@@ -52,6 +68,40 @@ ul li{
     background: #35B8BE;
     color: white;
 }
+button{
+    transition: 0.2s;
+    border: 0;
+}
+button:hover{
+    background: #007F85;
+}
 main{
     margin-top: 143px;
+}
+.cart{
+    height: 55px;
+    width: 55px;
+    background: #35B8BE;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+.cart img{
+    margin: auto 0;
+    width: 25px;
+    height: 17px;
+}
+.cart-count{
+    position: relative;
+    right: 45px;
+    bottom: 10px;
+    color: #35B8BE;
+    height: 25px;
+    width: 25px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
