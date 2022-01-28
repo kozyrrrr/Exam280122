@@ -5,34 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="style/normalize.css">
     <title>Козырь Сергей Константинович 201-323 28.01.2022</title>
 </head>
 
 <body>
     <header>
-        <img src="img/logo.svg" class="logo" alt="logo">
-        <nav>
-            <ul class="top_menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><button class="button">korzina</button></a></li>
-            </ul>
-        </nav>
+        <div class="flex justify-between header">
+            <img src="img/logo.svg" class="logo" alt="logo">
+            <div>
+                <ul class="top_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><img class="h-60px" src="/img/cart.png" /></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <main>
-     <section>
-         <h1>Beautiful food &<br> takeaway, delivered<br> to your door.</h1>
-         <p>Lorem Ipsum is simply dummy text of the printing and<br> typesetting industry. 
-            Lorem Ipsum has been the industry's<br> standard dummy text ever since the 1500.</p>
-        <button type="button" name="place_order">Place an order</button>   
-        <img src="img/logo2.svg"  alt="logo2"> 
-     </section>
+    <main class="flex">
+        <div class="mx-auto flex">
+            <div>
+                <h2 class="main-text">
+                    Beautiful food &<br> takeaway, delivered<br> to your door.
+                </h2>
+                <p class="p">Lorem Ipsum is simply dummy text of the printing and<br> typesetting industry.
+                    Lorem Ipsum has been the industry's<br> standard dummy text ever since the 1500.</p>
+                <div>
+                    <button type="button" class="order-button">Place an order</button>
+                </div>
+                <div><img src="img/logo2.svg" alt="logo2"></div>
+            </div>
+            <div><img src="img/bg.jpg" /></div>
+        </div>
 
     </main>
-</body>
+
+    </body>
