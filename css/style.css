@@ -19,6 +19,7 @@ li{
 }
 .flex{
     display: flex;
+
 }
 .justify-between{
     justify-content: space-between;
@@ -38,4 +39,19 @@ ul li{
 }
 .text-green{
     color: #35B8BE;
+}
+.p{
+    color: #546285;
+}
+.order-button{
+    margin: 38px 0 30px 0;
+    border: 0;
+    height: 60px;
+    width: 193px;
+    border-radius: 6px;
+    background: #35B8BE;
+    color: white;
+}
+main{
+    margin-top: 143px;
 }
