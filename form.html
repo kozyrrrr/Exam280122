@@ -19,7 +19,21 @@
     </header>
     <main class="vh-100 d-flex justify-content-center">
         <form action="https://httpbin.org/post" method="POST" class="shadow-lg h-50 w-50 my-auto d-flex flex-column justify-content-center">
-            
+            <div class="w-75 h-75 mx-auto d-flex flex-column justify-content-between">
+                <label class="w-100" for="film"><input name="film"  id="film" class="px-2" placeholder="Название фильма" /></label>
+                <label class="w-100" for="date"><input name="date"  id="date" class="px-2" type="date" /></label>
+                <label class="w-100" for="time"><input name="time"  id="time" class="px-2" type="time" /></label>
+                <div class="d-flex flex-column">
+                    <div>Выберите тип оплаты:</div>
+                    <div>
+                        <label class="d-flex" for="cash">Наличными
+                            <input class="my-auto mr-2" type="radio" value="cash" name="pay" id="cash" />
+                        </label>
+                        <label class="d-flex" for="card">Картой
+                            <input class="my-auto mr-2" type="radio" value="card" name="pay" id="card" />
+                        </label>
+                    </div>
+                </div>
                 <button type="submit">Отправить</button>
             </div>
         </form>
