@@ -2,12 +2,12 @@
 body{
     font-family: "Inter";
     font-size: 15px;
-    width: 100vw;
+    overflow: hidden;
 }
 .body{
     margin: 0 auto;
     max-width: 1440px;
-    width: 100%;
+    
 }
 header{
     height: 100px;
@@ -20,22 +20,18 @@ li{
 }
 .flex{
     display: flex;
-
 }
 .justify-between{
     justify-content: space-between;
 }
 .header{
-    margin: 20px 120px;
     max-width: 1200px;
     width: 100%;
+    margin: 20px auto;
 }
 .logo{
     height: 51px;
     width: 40px;
-}
-ul li{
-    margin: auto 0;
 }
 .links{
     max-width: 500px;
@@ -47,14 +43,17 @@ ul li{
     justify-content: space-between;
     width: 100%;
 }
+ul li{
+    margin: auto 0;
+}
 .h-60px{
     height: 60px;
 }
-.main-text{
-    font-size: 60px;
-}
 .text-green{
     color: #35B8BE;
+}
+.main-text{
+    font-size: 60px;
 }
 .p{
     color: #546285;
@@ -104,4 +103,40 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+@media screen and (min-width: 2200px){
+    body{
+        position: relative;
+        top: 200px;
+        transform: scale(1.5);
+    }
+}
+@media screen and (max-width: 1000px) {
+    body{
+        position: relative;
+        bottom: 150px;
+        transform: scale(0.7);
+    }
+    .header{
+        max-width: 1000px;
+    }
+}
+@media screen and (max-width: 700px) {
+    body{
+        position: relative;
+        bottom: 250px;
+        right: 100px;
+        transform: scale(0.5);
+    }
+    .header{
+        width: 850px;
+    }
+}
+a{
+    cursor: pointer;
+    transition: 0.2s;
+    color: #28224B;
+}
+a:hover{
+    color: #35B8BE;
 }
